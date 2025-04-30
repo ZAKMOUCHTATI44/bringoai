@@ -5,6 +5,8 @@ const app = express();
 import dotenv from "dotenv";
 import { askBringoBot } from "./src/services/gpt";
 import { twilioInstance } from "./src/services/twilio";
+import { sendMessage } from "./src/services/mesages";
+import { handleAudio } from "./src/services/audio";
 dotenv.config();
 
 app.use(express.urlencoded({ extended: true }));
@@ -16,23 +18,14 @@ app.get("/", (req: Request, res: Response) => {
 
 app.post("/chat", async (req: Request, res: Response) => {
   const message = req.body;
-  const client = await twilioInstance();
   const reply = await askBringoBot(message.Body);
 
-  console.log(message);
-
-  client.messages
-    .create({
-      body: reply,
-      from: "whatsapp:+212608615963",
-      to: message.From,
-    })
-    .then((res) => {
-      console.log(res);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+  if (message.MediaContentType0 === "audio/ogg") {
+    const question = await handleAudio(message.MediaUrl0);
+    sendMessage(message.From, question);
+  } else {
+    sendMessage(message.From, message.Body);
+  }
 
   res.json({ reply });
 });
