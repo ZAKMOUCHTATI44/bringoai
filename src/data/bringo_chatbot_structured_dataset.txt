@@ -1,0 +1,126 @@
+[Welcome]
+User: Bonjour
+Bot:
+ 👋 Bonjour et bienvenue chez Bringo by Carrefour ! Vos courses livrées à domicile, rapidement et simplement. Comment pouvons-nous vous aider aujourd’hui ?
+Options:
+1. 🛒 Découvrir Bringo
+2. 📦 Commander maintenant
+3. ❓ Questions fréquentes
+4. 🚚 Suivre ma commande
+
+---
+
+[Option 1]
+User: 1
+Bot:
+ Bringo vous permet de commander vos produits Carrefour préférés et de vous faire livrer à domicile, en quelques clics. Téléchargez notre application pour commencer votre première commande ! 🚀
+📱 Télécharger sur iOS: https://apps.apple.com/us/app/bringo-by-carrefour-maroc/id1578439083
+📱 Télécharger sur Android: https://play.google.com/store/apps/details?id=ro.ascendnet.bringo.ma
+
+---
+
+[Option 2]
+User: 2
+Bot:
+ Que souhaitez-vous commander aujourd’hui ? 🍽️🧴🏡
+Options:
+1. 🛒 Courses alimentaires
+2. 🧼 Produits d’hygiène et entretien
+3. 🛍️ Produits Carrefour essentiels
+4. 🔙 Retour au menu principal
+
+---
+
+[Commande choisie]
+User: Courses alimentaires
+Bot:
+ Super choix ! Nous vous redirigeons vers notre application pour finaliser votre commande. 🎯
+📱 Télécharger sur iOS: https://apps.apple.com/us/app/bringo-by-carrefour-maroc/id1578439083
+📱 Télécharger sur Android: https://play.google.com/store/apps/details?id=ro.ascendnet.bringo.ma
+
+---
+
+[Option 3]
+User: 3
+Bot:
+ Voici ce que l'on nous demande souvent : 👇
+Options:
+1. 📦 Quels sont les frais de livraison ?
+2. 🕒 Quels sont vos horaires de livraison ?
+3. 📍 Est-ce que ma ville est desservie ?
+4. 💳 Quels modes de paiement acceptez-vous ?
+5. 🎁 Comment utiliser un code promo ?
+
+---
+
+[FAQ - Frais de livraison]
+User: frais de livraison
+Bot:
+ La livraison Bringo est gratuite à partir de 400 MAD d'achats. Sinon, les frais sont de 20 MAD.
+🔙 Retour au menu principal
+
+---
+
+[FAQ - Horaires]
+User: horaires
+Bot:
+ Nous livrons du lundi au samedi de 9h00 à 20h00.
+🔙 Retour au menu principal
+
+---
+
+[FAQ - Zones desservies]
+User: zones
+Bot:
+ Bringo est disponible à Casablanca, Rabat, Marrakech et Tanger. D'autres villes arrivent bientôt ! 🏙️
+🔙 Retour au menu principal
+
+---
+
+[FAQ - Modes de paiement]
+User: modes de paiement
+Bot:
+ Vous pouvez payer en ligne (carte bancaire) ou à la livraison en espèces.
+🔙 Retour au menu principal
+
+---
+
+[FAQ - Code promo]
+User: code promo
+Bot:
+ Sur l’application Bringo, saisissez votre code dans votre panier avant validation pour bénéficier de votre réduction.
+🔙 Retour au menu principal
+
+---
+
+[Option 4]
+User: 4
+Bot:
+ 🚚 Pour suivre votre commande en direct, cliquez ici : [Lien vers suivi commande App Bringo]
+Ou utilisez notre service client si vous avez besoin d’aide.
+Options:
+1. 📲 Suivre ma commande
+2. 💬 Contacter un conseiller humain
+
+---
+
+[Fallback]
+User: texte non reconnu
+Bot:
+ Je suis désolé, je n'ai pas compris votre demande. Voici ce que je peux faire pour vous 👇
+Options:
+1. 🛒 Découvrir Bringo
+2. 📦 Commander maintenant
+3. ❓ Questions fréquentes
+4. 🚚 Suivre ma commande
+
+---
+
+[Retargeting]
+Condition: utilisateur inactif 7+ jours
+Bot:
+ 🎁 Votre 1ère commande Bringo vous attend ! 50 MAD offerts pour découvrir la livraison express Carrefour chez vous. 🚚
+➡️ Commander Maintenant
+
+---
+
