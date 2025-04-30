@@ -18,16 +18,17 @@ app.get("/", (req: Request, res: Response) => {
 
 app.post("/chat", async (req: Request, res: Response) => {
   const message = req.body;
-  const reply = await askBringoBot(message.Body);
 
   if (message.MediaContentType0 === "audio/ogg") {
     const question = await handleAudio(message.MediaUrl0);
-    sendMessage(message.From, question);
+    const reply = await askBringoBot(question);
+    sendMessage(message.From, reply);
   } else {
-    sendMessage(message.From, message.Body);
+    const reply = await askBringoBot(message.Body);
+    sendMessage(message.From, reply );
   }
 
-  res.json({ reply });
+  res.json({ message: "Success" });
 });
 
 const PORT = process.env.PORT || 3000;
