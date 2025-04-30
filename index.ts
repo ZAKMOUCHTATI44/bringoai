@@ -7,6 +7,7 @@ import { askBringoBot } from "./src/services/gpt";
 import { twilioInstance } from "./src/services/twilio";
 dotenv.config();
 
+app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get("/", (req: Request, res: Response) => {
