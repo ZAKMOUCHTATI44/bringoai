@@ -1,0 +1,99 @@
+﻿[Welcome]
+👋 Bonjour et bienvenue chez Bringo by Carrefour !
+Vos courses livrées à domicile, rapidement et simplement.
+Comment pouvons-nous vous aider aujourd’hui ?
+
+Options:
+1. 🛒 Découvrir Bringo
+2. 📦 Commander maintenant
+3. ❓ Questions fréquentes
+4. 🚚 Suivre ma commande
+
+---
+
+[Discover Bringo]
+Bringo vous permet de commander vos produits Carrefour préférés et de vous faire livrer à domicile, en quelques clics.
+Téléchargez notre application pour commencer votre première commande ! 🚀
+
+📱 Télécharger sur iOS:
+https://apps.apple.com/us/app/bringo-by-carrefour-maroc/id1578439083
+
+📱 Télécharger sur Android:
+https://play.google.com/store/apps/details?id=ro.ascendnet.bringo.ma
+
+---
+
+[Order Now]
+Que souhaitez-vous commander aujourd’hui ? 🍽️🧴🏡
+
+Options:
+1. 🛒 Courses alimentaires
+2. 🧼 Produits d’hygiène et entretien
+3. 🛍️ Produits Carrefour essentiels
+4. 🔙 Retour au menu principal
+
+Réponse après sélection:
+Super choix ! Nous vous redirigeons vers notre application pour finaliser votre commande. 🎯
+
+🔗 Ouvrir l’App Bringo
+
+---
+
+[FAQs]
+Voici ce que l'on nous demande souvent : 👇
+
+Options:
+1. 📦 Quels sont les frais de livraison ?
+2. 🕒 Quels sont vos horaires de livraison ?
+3. 📍 Est-ce que ma ville est desservie ?
+4. 💳 Quels modes de paiement acceptez-vous ?
+5. 🎁 Comment utiliser un code promo ?
+
+Réponses:
+📦 Frais de livraison:
+La livraison Bringo est gratuite à partir de 400 MAD d'achats. Sinon, les frais sont de 20 MAD.
+
+🕒 Horaires:
+Nous livrons du lundi au samedi de 9h00 à 20h00.
+
+📍 Zones desservies:
+Bringo est disponible à Casablanca, Rabat, Marrakech et Tanger. D'autres villes arrivent bientôt ! 🏙️
+
+💳 Modes de paiement:
+Vous pouvez payer en ligne (carte bancaire) ou à la livraison en espèces.
+
+🎁 Code promo:
+Sur l’application Bringo, saisissez votre code dans votre panier avant validation pour bénéficier de votre réduction.
+
+🔙 Retour au menu principal
+
+---
+
+[Order Tracking]
+🚚 Pour suivre votre commande en direct, cliquez ici :
+[Lien vers suivi commande App Bringo]
+
+Ou utilisez notre service client si vous avez besoin d’aide.
+
+Options:
+1. 📲 Suivre ma commande
+2. 💬 Contacter un conseiller humain
+
+---
+
+[Fallback Handling]
+Je suis désolé, je n'ai pas compris votre demande.
+Voici ce que je peux faire pour vous 👇
+
+(Reproposer le menu principal)
+
+🔁 Après 2 échecs successifs → transfert automatique vers un opérateur humain.
+
+---
+
+[Retargeting Bonus]
+🎁 Votre 1ère commande Bringo vous attend !
+50 MAD offerts pour découvrir la livraison express Carrefour chez vous. 🚚
+
+Bouton: ➡️ Commander Maintenant
+(Condition : utilisateur inactif depuis 7+ jours sans commande)
