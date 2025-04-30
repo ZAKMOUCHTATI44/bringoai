@@ -8,7 +8,6 @@ import { twilioInstance } from "./src/services/twilio";
 dotenv.config();
 
 app.use(bodyParser.json());
-// app.use("/chat", chatRoutes);
 
 app.get("/", (req: Request, res: Response) => {
   res.send("HElloWORLD");
@@ -18,6 +17,9 @@ app.post("/chat", async (req: Request, res: Response) => {
   const message = req.body;
   const client = await twilioInstance();
   const reply = await askBringoBot(message.Body);
+
+  console.log(message);
+
   client.messages
     .create({
       body: reply,
