@@ -5,7 +5,7 @@
     "postinstall": "prisma generate",
     "bnuild": "prisma generate && tsc",
     "dev": "nodemon index.ts",
-    "start": "ts-node index.ts",
+    "start": "pm2 delete chatbotbringo; pm2 start --name chatbotbringo \"npx ts-node --transpile-only index.ts\"",
     "build": "tsc"
   },
   "devDependencies": {
