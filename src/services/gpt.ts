@@ -7,7 +7,7 @@ dotenv.config();
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY! });
 
-let usersPath = path.join(process.cwd(), "src/data/scenario.txt");
+let usersPath = path.join(process.cwd(), "src/data/arma.txt");
 
 const scenarioText = fs.readFileSync(usersPath, "utf-8");
 
