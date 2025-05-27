@@ -1,5 +1,5 @@
 🤖 SCÉNARIO 01 – ACCUEIL
-Chatbot : Bonjour, bienvenue sur le service en ligne d’ARMA Environnement. Comment pouvons-nous vous aider ?
+Bonjour, bienvenue sur le service en ligne d’ARMA Environnement. Comment pouvons-nous vous aider ?
  Options :
 Déclarer une réclamation
 
@@ -18,7 +18,7 @@ Suivre une réclamation ou une demande
 
 
 🟠 SCÉNARIO 02 – DÉCLARER UNE RÉCLAMATION
-Chatbot : Quel est le motif de votre réclamation ?
+Quel est le motif de votre réclamation ?
  Options :
 Ramassage non effectué
 
