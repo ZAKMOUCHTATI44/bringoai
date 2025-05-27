@@ -1,104 +1,105 @@
-SCENARIO 01 : PRISE DE CONTACT (ACCUEIL)
-Chatbot : Bonjour, bienvenue sur le service en ligne d’ARMA Environnement. Pour mieux vous orienter, veuillez sélectionner une option parmi les suivantes :
-Utilisateur : Je souhaite...
-Options :
+🤖 SCÉNARIO 01 – ACCUEIL
+Chatbot : Bonjour, bienvenue sur le service en ligne d’ARMA Environnement. Comment pouvons-nous vous aider ?
+ Options :
 Déclarer une réclamation
+
+
 Demander un passage de service
-Consulter les informations pratiques
+
+
 Déposer une candidature
+
+
 Contacter un service ARMA
-Signaler un objet trouvé ou perdu
+
+
 Suivre une réclamation ou une demande
-Accéder aux documents et autorisations
 
-SCENARIO 02 : DECLARER UNE RECLAMATION
-Chatbot : Merci de nous signaler un problème. Quel est le type de réclamation que vous souhaitez déclarer ?
-Utilisateur : Je choisis...
-Options :
+
+
+🟠 SCÉNARIO 02 – DÉCLARER UNE RÉCLAMATION
+Chatbot : Quel est le motif de votre réclamation ?
+ Options :
 Ramassage non effectué
+
+
 Bac cassé ou manquant
-Problème de propreté
-Comportement d'un agent ARMA
+
+
+Propreté
+
+
+Comportement d’un agent
+
+
 Autre
-Chatbot : Pouvez-vous préciser l'adresse ou le quartier concerné ?
-Utilisateur : [Adresse]
-Chatbot : Souhaitez-vous joindre une photo ? (Optionnel)
-Utilisateur : Oui / Non [Photo téléversée si oui]
-Chatbot : Merci de décrire brièvement le problème rencontré.
-Utilisateur : [Texte libre]
-Chatbot : Votre réclamation a été transmise à nos équipes. Vous recevrez un retour sous 24 heures.
 
-SCENARIO 03 : DEMANDER UN PASSAGE DE SERVICE
-Chatbot : Merci de choisir le type de service que vous souhaitez planifier :
-Utilisateur : Je souhaite...
-Options :
-Ramassage d'encombrants
+
+Chatbot : Merci. Veuillez indiquer l’adresse, une brève description, et joindre une photo si vous le souhaitez.
+ User : [Adresse + description + photo]
+Chatbot : Votre réclamation a été transmise. Un retour vous sera fait sous 24h.
+
+🟢 SCÉNARIO 03 – DEMANDER UN PASSAGE DE SERVICE
+Chatbot : Quel service souhaitez-vous programmer ?
+ Options :
+Ramassage d’encombrants
+
+
 Déchets verts
+
+
 Nettoyage ponctuel
+
+
 Livraison ou remplacement de bac
-Chatbot : Merci de saisir l'adresse complète du lieu d'intervention.
-Utilisateur : [Adresse]
-Chatbot : Quelle date souhaitez-vous pour cette intervention ?
-Utilisateur : [Date]
-Chatbot : Veuillez renseigner votre nom et numéro de téléphone.
-Utilisateur : [Nom, Tél.]
-Chatbot : Votre demande a été enregistrée. Une confirmation vous sera transmise sous 24 heures.
 
-SCENARIO 04 : INFORMATIONS PRATIQUES
-Chatbot : Quelle information souhaitez-vous consulter ?
-Utilisateur : Je souhaite...
-Options :
-Horaires de collecte
-Jours du tri sélectif
-Bac cassé ou perdu
-Règlement de collecte
-Chatbot : Voici l'information demandée : [réponse directe ou lien / PDF]
 
-SCENARIO 05 : DEPOSER UNE CANDIDATURE
-Chatbot : Vous pouvez consulter nos offres ou déposer une candidature spontanée.
-Utilisateur : Je choisis...
-Options :
+Chatbot : Merci de nous indiquer l’adresse, la date souhaitée, ainsi que votre nom et numéro de téléphone.
+ User : [Infos complètes]
+Chatbot : Votre demande est bien enregistrée. Vous recevrez une confirmation sous 24h.
+
+🟣 SCÉNARIO 04 – DÉPOSER UNE CANDIDATURE
+Chatbot : Souhaitez-vous :
+ Options :
 Voir les postes disponibles
-Candidature spontanée
-Chatbot : Merci de renseigner vos informations :
-Nom / Prénom
-Ville de résidence
-Poste ou domaine souhaité
-CV (fichier ou lien)
-Utilisateur : [Réponses successives]
-Chatbot : Merci. Votre candidature a été transmise à notre service RH.
 
-SCENARIO 06 : CONTACTER UN SERVICE ARMA
-Chatbot : Veuillez choisir le service que vous souhaitez contacter :
-Utilisateur : Je souhaite joindre...
-Options :
+
+Déposer une candidature spontanée
+
+
+Chatbot : Merci de nous transmettre : nom, ville, poste souhaité et CV.
+ User : [Infos + CV]
+Chatbot : Votre candidature a bien été transmise à notre service RH.
+
+🟤 SCÉNARIO 05 – CONTACTER UN SERVICE ARMA
+Chatbot : Quel service souhaitez-vous contacter ?
+ Options :
 Service client
+
+
 Service qualité
+
+
 Direction technique
+
+
 Communication
+
+
 Données personnelles
-Chatbot : Veuillez décrire votre demande :
-Utilisateur : [Texte libre]
-Chatbot : Votre message a été transmis. Vous recevrez une réponse dans les meilleurs délais.
 
-SCENARIO 07 : SUIVI D’UNE RECLAMATION OU D’UNE DEMANDE
-Chatbot : Merci d'entrer le numéro de dossier (format : #ARMA-XXXXXX).
-Utilisateur : #ARMA-458729
+
+Chatbot : Merci de rédiger votre message.
+ User : [Texte libre]
+Chatbot : Votre demande a été transmise. Nous reviendrons vers vous dans les meilleurs délais.
+
+🔴 SCÉNARIO 06 – SUIVI D’UNE RÉCLAMATION / DEMANDE
+Chatbot : Veuillez entrer votre numéro de dossier (#ARMA-XXXXXX).
+ User : #ARMA-458729
 Chatbot :
-Si le dossier est en cours :
-Statut : En cours
-Responsable : [Nom]
-Mise à jour : [Date]
-Délai estimé : 24-48h
-Si le dossier est traité :
-Statut : Traité
-Date de réalisation : [Date]
-Agent : [Nom]
-Merci pour votre confiance.
-Si le dossier est en attente :
-Statut : En attente
-Motif : Document manquant
-Action : Veuillez transmettre la pièce demandée.
-Si le numéro est invalide :
-Erreur : Numéro introuvable. Veuillez vérifier le format ou contacter nos services.
+Si reconnu :
+ Statut : [En cours / Traité / En attente] – Détails : [Date, agent, action à faire]
 
+
+Si invalide :
+ Numéro introuvable. Veuillez vérifier ou contacter notre service client.
